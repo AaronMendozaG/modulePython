@@ -13,3 +13,9 @@ Objetivo: {objetivo}
 Que hace?: {queHace}
 ''')
 
+
+lista=[10,1,2,3,4]
+list(map(lambda lista: str(lista),lista))
+list(map(lambda lista: type(lista),lista))
+
+
