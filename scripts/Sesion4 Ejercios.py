@@ -17,9 +17,7 @@ cel={
 
 cel['Almacenamiento']=cel['Almacenamiento']+10
 cel  
-
-lista_lista=[1,2,3]
-len([1 for x in lista_lista if isinstance(x,list)])>0
+            
 
 
 
