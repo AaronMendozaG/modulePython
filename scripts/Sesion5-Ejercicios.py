@@ -17,12 +17,16 @@ nuevo_dict={}
 
 while True:
     nombre=input("Inserta el nombre del alumno: ")
-    minutos=int(input("Ingrese un numero en minutos: "))
     if nombre == 'NO':
         break
+    if nombre in nuevo_dict.keys():
+        print('Ingresa otro Koder: Ya esta registrado.')
+        continue
+
+    minutos=int(input("Ingrese un numero en minutos: "))
     nuevo_dict.update({nombre:minutos})
 
-    if nombre in nuevo_dict.keys():
+    
         
 
 for nombre,minutos in nuevo_dict.items():
