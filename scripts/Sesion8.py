@@ -152,3 +152,41 @@ agua.car
 agua.priceIvaF()
 agua.infoCar()
 
+
+x=1
+y=2
+z=3
+n=3
+iterableList=[x,y,z]
+# print(iterableList)
+# if x>y and x>z :
+#     newList=[[a,b,c] for a in iterableList for b in iterableList for c in iterableList ]
+#     print(newList)
+# elif y>x and y>z :
+#     newList=[[a,b,c] for a in range(y+1) for b in range(y+1) for c in range(y+1) if (a+b+c) != n]
+#     print(newList)
+# elif z>x and z>y :
+#     newList=[[a,b,c] for a in range(z+1) for b in range(z+1) for c in range(z+1) if (a+b+c) != n]
+#     print(newList)
+# elif x==y or x==z:
+#     newList=[[a,b,c] for a in range(x+1) for b in range(x+1) for c in range(x+1) if (a+b+c) != n]
+#     print(newList)
+# elif y==z:
+#     newList=[[a,b,c] for a in range(y+1) for b in range(y+1) for c in range(y+1) if (a+b+c) != n]
+#     print(newList)
+# elif z==x:
+#     newList=[[a,b,c] for a in range(z+1) for b in range(z+1) for c in range(z+1) if (a+b+c) != n]
+#     print(newList)
+
+print([[a,b,c] for a in range(0,x+1) for b in range(0,y+1) for c in range(0,z+1) if (a+b+c) != n])
+
+if __name__ == '__main__':
+    n = 5
+    a=[2,3,3,6,5]
+    arr = map(int, a.split())
+aUno=a[::-1]
+aUno
+for i in a:
+    for j in aUno:
+        if i==j:
+            print(i)
